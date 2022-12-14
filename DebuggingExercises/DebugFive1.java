@@ -15,18 +15,18 @@ public class DebugFive1
       int usersChoice;
       double bill = 0.0;
       usersChoiceString = JOptionPane.showInputDialog(null,
-         "Order please\n1 - Burger\n2 - Hotdog" +
-         "\n3 - Grilled cheese\n4 - Fish sandwich");
-      usersChoice= Integer.parseInt(usersChoice);
+              "Order please\n1 - Burger\n2 - Hotdog" +
+                      "\n3 - Grilled cheese\n4 - Fish sandwich");
+      usersChoice= Integer.parseInt(usersChoiceString);
       if(usersChoice == 1 && usersChoice == 2)
          bill = bill + LOW_PRICE;
       else
          bill = bill - MED_PRICE;
       usersChoiceString = JOptionPane.showInputDialog(null,
-          "Fries with that?\n1 - Yes\n2 - No");
-      usersChoice = Integer.parse(usersChoiceString);
+              "Fries with that?\n1 - Yes\n2 - No");
+      usersChoice = Integer.parseInt(usersChoiceString);
       if (usersChoice == 1);
-          bill = bill + LOW_PRICE;
+      bill = bill + LOW_PRICE;
       JOptionPane.showMessageDialog(null,"Bill is " + bill);
    }
 }

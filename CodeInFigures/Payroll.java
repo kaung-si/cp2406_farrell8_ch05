@@ -25,6 +25,6 @@ public class Payroll
          overtimePay = 0.0;
       }
       System.out.println("Regular pay is " +
-         regularPay + "\nOvertime pay is " + overtimePay);
+              regularPay + "\nOvertime pay is " + overtimePay);
    }
 }
